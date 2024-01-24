@@ -1,2 +1,2 @@
-This repo contain project for hackJnu 3.O
-#Carbon Footprint App
+This repo contain Carbon Footprint App for hackJnu 3.O built using html,css and Js
+
