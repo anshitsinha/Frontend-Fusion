@@ -34,3 +34,18 @@ function calculator(){
     let target=document.getElementsByClassName("opBox")[0];
     target.innerHTML="Your approximate Carbon Footprint : "+totalEmission
 }
+
+
+var p1 = document.getElementsByClassName("p1");
+var n1 = document.getElementsByClassName("n1");
+var p2 = document.getElementsByClassName("p2");
+var n2 = document.getElementsByClassName("n2");
+var p3 = document.getElementsByClassName("p3");
+var n3 = document.getElementsByClassName("n3");
+var p4 = document.getElementsByClassName("p4");
+var n4 = document.getElementsByClassName("n4");
+var p5 = document.getElementsByClassName("p5");
+var n5 = document.getElementsByClassName("n5");
+
+
+
