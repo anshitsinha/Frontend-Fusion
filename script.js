@@ -40,6 +40,8 @@ var p1 = document.querySelector(".p1");
 var n1 = document.querySelector(".n1");
 var p2 = document.querySelector(".p2");
 var n2 = document.querySelector(".n2");
+var p10 = document.querySelector(".p10");
+var n10 = document.querySelector(".n10");
 var p3 = document.querySelector(".p3");
 var n3 = document.querySelector(".n3");
 var p4 = document.querySelector(".p4");
@@ -49,7 +51,9 @@ var n5 = document.querySelector(".n5");
 
 var electricity = document.querySelector(".electricity");
 var houseFuel = document.querySelector(".houseFuel");
-var travel = document.querySelector(".travel");
+var fasttravel = document.querySelector(".fasttravel");
+var slowtravel = document.querySelector(".slowtravel");
+
 var travelFuel = document.querySelector(".travelFuel");
 var meal = document.querySelector(".meal");
 var submit = document.querySelector(".submit");
@@ -63,11 +67,16 @@ n1.addEventListener('click', function(event) {
 
 n2.addEventListener('click', function(event) {
     houseFuel.style.display = "none";
-    travel.style.display = "block";
+    fasttravel.style.display = "block";
+});
+n10.addEventListener('click', function(event){
+    fasttravel.style.display = "none";
+    slowtravel.style.display = "block";  
+
 });
 
 n3.addEventListener('click', function(event) {
-    travel.style.display = "none";
+    slowtravel.style.display = "none";
     travelFuel.style.display = "block";
 });
 
@@ -92,15 +101,19 @@ p2.addEventListener('click', function(event) {
     houseFuel.style.display = "none";
     electricity.style.display = "block";
 });
+p10.addEventListener('click', function(event) {
+    fasttravel.style.display = "none";
+    houseFuel.style.display = "block";
+});
 
 p3.addEventListener('click', function(event) {
-    travel.style.display = "none";
-    houseFuel.style.display = "block";
+    slowtravel.style.display = "none";
+    fasttravel.style.display = "block";
 });
 
 p4.addEventListener('click', function(event) {
     travelFuel.style.display = "none";
-    travel.style.display = "block";
+    slowtravel.style.display = "block";
 });
 
 p5.addEventListener('click', function(event) {
