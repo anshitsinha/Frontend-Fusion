@@ -36,16 +36,16 @@ function calculator(){
 }
 
 
-var p1 = document.getElementsByClassName("p1");
-var n1 = document.getElementsByClassName("n1");
-var p2 = document.getElementsByClassName("p2");
-var n2 = document.getElementsByClassName("n2");
-var p3 = document.getElementsByClassName("p3");
-var n3 = document.getElementsByClassName("n3");
-var p4 = document.getElementsByClassName("p4");
-var n4 = document.getElementsByClassName("n4");
-var p5 = document.getElementsByClassName("p5");
-var n5 = document.getElementsByClassName("n5");
+var p1 = document.querySelector(".p1");
+var n1 = document.querySelector(".n1");
+var p2 = document.querySelector(".p2");
+var n2 = document.querySelector(".n2");
+var p3 = document.querySelector(".p3");
+var n3 = document.querySelector(".n3");
+var p4 = document.querySelector(".p4");
+var n4 = document.querySelector(".n4");
+var p5 = document.querySelector(".p5");
+var n5 = document.querySelector(".n5");
 
 var electricity = document.querySelector(".electricity");
 var houseFuel = document.querySelector(".houseFuel");
