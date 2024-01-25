@@ -47,5 +47,67 @@ var n4 = document.getElementsByClassName("n4");
 var p5 = document.getElementsByClassName("p5");
 var n5 = document.getElementsByClassName("n5");
 
+var electricity = document.querySelector(".electricity");
+var houseFuel = document.querySelector(".houseFuel");
+var travel = document.querySelector(".travel");
+var travelFuel = document.querySelector(".travelFuel");
+var meal = document.querySelector(".meal");
+var submit = document.querySelector(".submit");
+
+// next buttons
+
+n1.addEventListener('click', function(event) {
+    electricity.style.display = "none";
+    houseFuel.style.display = "block";
+});
+
+n2.addEventListener('click', function(event) {
+    houseFuel.style.display = "none";
+    travel.style.display = "block";
+});
+
+n3.addEventListener('click', function(event) {
+    travel.style.display = "none";
+    travelFuel.style.display = "block";
+});
+
+n4.addEventListener('click', function(event) {
+    travelFuel.style.display = "none";
+    meal.style.display = "block";
+});
+
+n5.addEventListener('click', function(event) {
+    meal.style.display = "none";
+    submit.style.display = "block";
+});
+
+// previous buttons
+
+// p1.addEventListener('click', function(event) {
+//     electricity.style.display = "none";
+//     houseFuel.style.display = "block";
+// });
+
+p2.addEventListener('click', function(event) {
+    houseFuel.style.display = "none";
+    electricity.style.display = "block";
+});
+
+p3.addEventListener('click', function(event) {
+    travel.style.display = "none";
+    houseFuel.style.display = "block";
+});
+
+p4.addEventListener('click', function(event) {
+    travelFuel.style.display = "none";
+    travel.style.display = "block";
+});
+
+p5.addEventListener('click', function(event) {
+    meal.style.display = "none";
+    travelFuel.style.display = "block";
+});
+
+
 
 
