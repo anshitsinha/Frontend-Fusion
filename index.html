@@ -1,151 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon Footprint</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <form action="" class="ipBox" onsubmit="handleFormSubmit(event)">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+        <!-- INPUT BOX -->
+      <form action="" class="ipBox" onsubmit="handleFormSubmit(event)">
         <div class="electricity">
-            <div class="aa">
-                <div class="aacontent">
-                 <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
-                 <label for="elect">Electricity(in kwh)</label>
-                 <input type="number" id="elect" min="0" value="0" class="box">
-                </div>
-                 <div class="navbtn">
-                    <a href="#" class="navbtns previous p1">&laquo; Previous1</a>
-                    <a href="#" class="navbtns next n1">Next1 &raquo;</a>
-                </div>
+          <div class="aa">
+            <div class="aacontent">
+              <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
+              <label for="elect">Electricity(in kwh)</label>
+              <input type="number" id="elect" min="0" value="0" class="box" />
             </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p1">&laquo; Previous1</a>
+              <a href="#" class="navbtns next n1">Next1 &raquo;</a>
+            </div>
+          </div>
         </div>
 
         <div class="houseFuel">
-            <div class="bb">
-               <div class="bbcontent">
-                <div class="bblpg">
-                  <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
-                  <label for="lpg">Gas Cylinder(in kg)</label>
-                  <input type="number"  id="lpg" min="0" value="0" class="box">
-                </div> 
-                <div class="bbcoal">
-                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
+          <div class="bb">
+            <div class="bbcontent">
+              <div class="bblpg">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
+                <label for="lpg">Gas Cylinder(in kg)</label>
+                <input type="number" id="lpg" min="0" value="0" class="box" />
+              </div>
+              <div class="bbcoal">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
                 <label for="coal">Coal Usage(in kg)</label>
-                <input type="number"  id="coal" min="0" value="0" class="box">
-               </div>
-               </div>
-               <div class="navbtn">
-                    <a href="#" class="navbtns previous p2">&laquo; Previous2</a>
-                    <a href="#" class="navbtns next n2">Next2 &raquo;</a>
-               </div>
+                <input type="number" id="coal" min="0" value="0" class="box" />
+              </div>
             </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p2">&laquo; Previous2</a>
+              <a href="#" class="navbtns next n2">Next2 &raquo;</a>
+            </div>
+          </div>
         </div>
 
         <div class="fasttravel">
-            <div class="cc">
-                 <div class="cccontent">
-                    <div class="ccair">
-                        <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
+          <div class="cc">
+            <div class="cccontent">
+              <div class="ccair">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
                 <label for="air">Air Travel(in km)</label>
-                <input type="number" id="air" min="0" value="0" class="box">
-                 </div>
-                 <div class="ccrail">
-                    <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
+                <input type="number" id="air" min="0" value="0" class="box" />
+              </div>
+              <div class="ccrail">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
                 <label for="rail">Rail Travel(in km)</label>
-                <input type="number" id="rail" min="0" value="0" class="box">
-            </div>
-            <div class="ccmetro">
-                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
+                <input type="number" id="rail" min="0" value="0" class="box" />
+              </div>
+              <div class="ccmetro">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
                 <label for="metro">Metro Travel(in km)</label>
-                <input type="number" id="metro" min="0" value="0" class="box">
-            </div> 
-                 </div>
-                <div class="navbtn">
-                    <a href="#" class="navbtns previous p10">&laquo; Previous10</a>
-                    <a href="#" class="navbtns next n10">Next10 &raquo;</a>
-                </div>
+                <input type="number" id="metro" min="0" value="0" class="box" />
+              </div>
             </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p10">&laquo; Previous10</a>
+              <a href="#" class="navbtns next n10">Next10 &raquo;</a>
+            </div>
+          </div>
         </div>
 
         <div class="slowtravel">
-                <div class="dd">
-                    <div class="ddcontent">
-                        <div class="ddbus">
-                            <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
+          <div class="dd">
+            <div class="ddcontent">
+              <div class="ddbus">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
                 <label for="bus">Bus Travel(in km)</label>
-                <input type="number" id="bus" min="0" value="0" class="box">
-                </div>
-                <div class="ddcar">
-                    <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
+                <input type="number" id="bus" min="0" value="0" class="box" />
+              </div>
+              <div class="ddcar">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
                 <label for="car">Car Travel(in km)</label>
-                <input type="number"  id="car" min="0" value="0" class="box">
-                   </div>
-                   </div>
-                <div class="navbtn">
-                    <a href="#" class="navbtns previous p3">&laquo; Previous3</a>
-                    <a href="#" class="navbtns next n3">Next3 &raquo;</a>
-                </div>
-               </div>
-        </div>
-             
-        <div class="travelFuel">
-                <div class="ee">
-                    <div class="eecontent">
-                        <div class="eepetrol">
-                            <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
-                <label for="petrol">Petrol Consumption(in litre)</label>
-                <input type="number"  id="petrol" min="0" value="0" class="box">
-                </div>
-                <div class="eediesel">
-                    <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
-                <label for="diesel">Diesel Consumption(in litre)</label>
-                <input type="number"  id="diesel" min="0" value="0" class="box">
-               </div>
-               <div class="eecng">
-                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img">
-                <label for="cng">CNG Consumption(in litre)</label>
-                <input type="number"  id="cng" min="0" value="0" class="box">
+                <input type="number" id="car" min="0" value="0" class="box" />
+              </div>
             </div>
-                   </div>
-                <div class="navbtn">
-                    <a href="#" class="navbtns previous p4">&laquo; Previous4</a>
-                    <a href="#" class="navbtns next n4">Next4 &raquo;</a>
-                </div>
-               </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p3">&laquo; Previous3</a>
+              <a href="#" class="navbtns next n3">Next3 &raquo;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="travelFuel">
+          <div class="ee">
+            <div class="eecontent">
+              <div class="eepetrol">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
+                <label for="petrol">Petrol Consumption(in litre)</label>
+                <input
+                  type="number"
+                  id="petrol"
+                  min="0"
+                  value="0"
+                  class="box"
+                />
+              </div>
+              <div class="eediesel">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
+                <label for="diesel">Diesel Consumption(in litre)</label>
+                <input
+                  type="number"
+                  id="diesel"
+                  min="0"
+                  value="0"
+                  class="box"
+                />
+              </div>
+              <div class="eecng">
+                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
+                <label for="cng">CNG Consumption(in litre)</label>
+                <input type="number" id="cng" min="0" value="0" class="box" />
+              </div>
+            </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p4">&laquo; Previous4</a>
+              <a href="#" class="navbtns next n4">Next4 &raquo;</a>
+            </div>
+          </div>
         </div>
 
         <div class="meal">
-            <div class="ff">
-                <div class="ffcontent">
-                    <div class="ffvegan">
+          <div class="ff">
+            <div class="ffcontent">
+              <div class="ffvegan">
                 <label for="vegan">Vegan</label>
-                <input type="radio" id="vegan" value="vegan" name="food">
-            </div>
-            <div class="ffveg">
+                <input type="radio" id="vegan" value="vegan" name="food" />
+              </div>
+              <div class="ffveg">
                 <label for="veg">Vegetarain</label>
-                <input type="radio" id="veg"  value="veg" name="food" checked>
-            </div>
-            <div class="ffmeat">
+                <input type="radio" id="veg" value="veg" name="food" checked />
+              </div>
+              <div class="ffmeat">
                 <label for="meat">Meat Eater</label>
-                <input type="radio" id="meat" value="meat" name="food">
+                <input type="radio" id="meat" value="meat" name="food" />
+              </div>
             </div>
-        </div>
-                <div class="navbtn">
-                    <a href="#" class="navbtns previous p5">&laquo; Previous5</a>
-                    <a href="#" class="navbtns next n5">Next5 &raquo;</a>
-                </div>
+            <div class="navbtn">
+              <a href="#" class="navbtns previous p5">&laquo; Previous5</a>
+              <a href="#" class="navbtns next n5">Next5 &raquo;</a>
             </div>
+          </div>
         </div>
 
         <button class="submit" onclick="calculator()">Submit</button>
-
-    </form>
-
-    <div class="opBox">
+      </form>
+        <!-- OUTPUT BOX -->
+      <div class="opBox"></div>
     </div>
+    
     <script src="script.js"></script>
-</div>
-</body>
+  </body>
+</html>
