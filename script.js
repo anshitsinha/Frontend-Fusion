@@ -1,6 +1,7 @@
 function handleFormSubmit(event) {
     event.preventDefault();
 }
+
 let electIP, lpgIP, caolIP, airIP, railIP, metroIP, busIP, carIP, petrolIP, dieselIP, cngIP, mealIP, totalEmission;
 
 function calculator(){
@@ -36,27 +37,29 @@ function calculator(){
 }
 
 
-var p1 = document.querySelector(".p1");
-var n1 = document.querySelector(".n1");
-var p2 = document.querySelector(".p2");
-var n2 = document.querySelector(".n2");
-var p10 = document.querySelector(".p10");
-var n10 = document.querySelector(".n10");
-var p3 = document.querySelector(".p3");
-var n3 = document.querySelector(".n3");
-var p4 = document.querySelector(".p4");
-var n4 = document.querySelector(".n4");
-var p5 = document.querySelector(".p5");
-var n5 = document.querySelector(".n5");
+let p1 = document.querySelector(".p1");
+let n1 = document.querySelector(".n1");
+let p2 = document.querySelector(".p2");
+let n2 = document.querySelector(".n2");
+let p10 = document.querySelector(".p10");
+let n10 = document.querySelector(".n10");
+let p3 = document.querySelector(".p3");
+let n3 = document.querySelector(".n3");
+let p4 = document.querySelector(".p4");
+let n4 = document.querySelector(".n4");
+let p5 = document.querySelector(".p5");
+let n5 = document.querySelector(".n5");
+let n6 = document.querySelector(".submit");
 
-var electricity = document.querySelector(".electricity");
-var houseFuel = document.querySelector(".houseFuel");
-var fasttravel = document.querySelector(".fasttravel");
-var slowtravel = document.querySelector(".slowtravel");
-
-var travelFuel = document.querySelector(".travelFuel");
-var meal = document.querySelector(".meal");
-var submit = document.querySelector(".submit");
+let electricity = document.querySelector(".electricity");
+let houseFuel = document.querySelector(".houseFuel");
+let fasttravel = document.querySelector(".fasttravel");
+let slowtravel = document.querySelector(".slowtravel");
+let travelFuel = document.querySelector(".travelFuel");
+let meal = document.querySelector(".meal");
+let submit = document.querySelector(".submit");
+let opBox=document.querySelector(".opBox");
+let ipBox=document.querySelector(".ipBox");
 
 // next buttons
 
@@ -64,7 +67,6 @@ n1.addEventListener('click', function(event) {
     electricity.style.display = "none";
     houseFuel.style.display = "block";
 });
-
 n2.addEventListener('click', function(event) {
     houseFuel.style.display = "none";
     fasttravel.style.display = "block";
@@ -72,22 +74,22 @@ n2.addEventListener('click', function(event) {
 n10.addEventListener('click', function(event){
     fasttravel.style.display = "none";
     slowtravel.style.display = "block";  
-
 });
-
 n3.addEventListener('click', function(event) {
     slowtravel.style.display = "none";
     travelFuel.style.display = "block";
 });
-
 n4.addEventListener('click', function(event) {
     travelFuel.style.display = "none";
     meal.style.display = "block";
 });
-
 n5.addEventListener('click', function(event) {
     meal.style.display = "none";
     submit.style.display = "block";
+});
+n6.addEventListener('click',function(event){
+    submit.style.display = "none";
+    ipBox.style.display = "none";
 });
 
 // previous buttons
@@ -105,17 +107,14 @@ p10.addEventListener('click', function(event) {
     fasttravel.style.display = "none";
     houseFuel.style.display = "block";
 });
-
 p3.addEventListener('click', function(event) {
     slowtravel.style.display = "none";
     fasttravel.style.display = "block";
 });
-
 p4.addEventListener('click', function(event) {
     travelFuel.style.display = "none";
     slowtravel.style.display = "block";
 });
-
 p5.addEventListener('click', function(event) {
     meal.style.display = "none";
     travelFuel.style.display = "block";

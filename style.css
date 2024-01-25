@@ -17,8 +17,10 @@
 }
 
 .opBox{
+    height: 100vh;;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .img{
@@ -32,7 +34,15 @@
     width: 5rem;
     padding: 0.25rem;
     border-radius: 0.25rem;
+    text-align: center;
 }
+/* FOR REMOVING UP-DOWN ARROW FROM INPUT */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+        
 
 .submit{
     width: 5rem;
@@ -77,6 +87,7 @@
 .aacontent{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -96,11 +107,13 @@
 .bblpg{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .bbcoal{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -120,16 +133,19 @@
 .ccair{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .ccrail{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .ccmetro{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -150,11 +166,13 @@
 .ddbus{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .ddcar{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -175,16 +193,19 @@
 .eepetrol{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .eediesel{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 .eecng{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
 }
 
