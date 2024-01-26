@@ -49,7 +49,7 @@ let p4 = document.querySelector(".p4");
 let n4 = document.querySelector(".n4");
 let p5 = document.querySelector(".p5");
 let n5 = document.querySelector(".n5");
-let n6 = document.querySelector(".submit");
+
 
 
 let x=document.querySelector(".x");
@@ -88,12 +88,9 @@ n4.addEventListener('click', function(event) {
 });
 n5.addEventListener('click', function(event) {
     meal.style.display = "none";
-    submit.style.display = "block";
-});
-n6.addEventListener('click',function(event){
-    submit.style.display = "none";
     ipBox.style.display = "none";
 });
+
 
 // previous buttons
 
