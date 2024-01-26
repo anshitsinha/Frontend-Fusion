@@ -51,6 +51,8 @@ let p5 = document.querySelector(".p5");
 let n5 = document.querySelector(".n5");
 let n6 = document.querySelector(".submit");
 
+
+let x=document.querySelector(".x");
 let electricity = document.querySelector(".electricity");
 let houseFuel = document.querySelector(".houseFuel");
 let fasttravel = document.querySelector(".fasttravel");
@@ -64,6 +66,7 @@ let ipBox=document.querySelector(".ipBox");
 // next buttons
 
 n1.addEventListener('click', function(event) {
+   x.style.display="none"
     electricity.style.display = "none";
     houseFuel.style.display = "block";
 });
@@ -102,6 +105,7 @@ n6.addEventListener('click',function(event){
 p2.addEventListener('click', function(event) {
     houseFuel.style.display = "none";
     electricity.style.display = "block";
+    x.style.display = "block" ;
 });
 p10.addEventListener('click', function(event) {
     fasttravel.style.display = "none";
