@@ -89,7 +89,7 @@ body {
 }
 
 .opBox{
-    /* height: 100vh;; */
+    height: 100vh;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,6 +179,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .bbcontent{
     display: flex;
+    justify-content: center;
     gap: 5rem;
 }
 .bblpg{
@@ -205,6 +206,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .cccontent{
     display: flex;
+    justify-content: center;
     gap: 5rem;
 }
 .ccair{
@@ -238,6 +240,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .ddcontent{
     display: flex;
+    justify-content: center;
     gap: 5rem;
 }
 .ddbus{
@@ -294,6 +297,10 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+.ffimg{
+    display: flex;
+    flex-direction: column;
 }
 .ffcontent{
     display: flex;
