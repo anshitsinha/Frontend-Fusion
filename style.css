@@ -111,6 +111,8 @@ body {
     padding: 0.25rem;
     border-radius: 0.25rem;
     text-align: center;
+    margin: 0.5em;
+    scale: 1.4;
 }
 /* FOR REMOVING UP-DOWN ARROW FROM INPUT */
 input[type="number"]::-webkit-inner-spin-button,
