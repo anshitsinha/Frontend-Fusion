@@ -59,14 +59,13 @@ let fasttravel = document.querySelector(".fasttravel");
 let slowtravel = document.querySelector(".slowtravel");
 let travelFuel = document.querySelector(".travelFuel");
 let meal = document.querySelector(".meal");
-let submit = document.querySelector(".submit");
 let opBox=document.querySelector(".opBox");
 let ipBox=document.querySelector(".ipBox");
 
-// next buttons
 
+// NEXT BUTTONS
 n1.addEventListener('click', function(event) {
-   x.style.display="none"
+    x.style.display="none"
     electricity.style.display = "none";
     houseFuel.style.display = "block";
 });
@@ -92,13 +91,7 @@ n5.addEventListener('click', function(event) {
 });
 
 
-// previous buttons
-
-// p1.addEventListener('click', function(event) {
-//     electricity.style.display = "none";
-//     houseFuel.style.display = "block";
-// });
-
+// PREVIOUS BUTTONS
 p2.addEventListener('click', function(event) {
     houseFuel.style.display = "none";
     electricity.style.display = "block";

@@ -9,13 +9,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 *::-webkit-scrollbar {
     display: none;
 }
-
 a {
     color: inherit;
+}
+.img{
+    width: 25vh;
+    height: 25vh;
 }
 
 
@@ -27,6 +29,7 @@ body {
 }
 
 
+/* HOME PAGE */
 .homePage{
     height: 90vh;
     margin: 1.2rem 1rem 1rem 1rem;
@@ -41,22 +44,22 @@ body {
     text-align: left;
 }
 .mainhomePage{
-    font-size: 100px;
+    font-size: 8vw;
     font-family: 'headingfont';
 }
 .subhomePage{
     font-family: 'Poppins', Courier, monospace;
-    width: 88%;
+    width: 88vw;
     font-weight: 450;
-    margin-top: 37px;
-    margin-left: 10px;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
 }
-
 .btnhomePage{
     text-align: center;
 }
 
 
+/* HOME NAV */
 .homeNav{
     display: flex;
     justify-content: space-between;
@@ -69,17 +72,17 @@ body {
     gap: 1.5rem;
 }
 
+
+/* ************************** */
 .preheading {
     font-weight: 600;
     margin-bottom: -40px;
     text-transform: uppercase;
 }
-
 .heading {
     font-family: 'headingfont';
     font-size: 80px;
 }
-
 .subheading {
     margin-top: -20px;
     font-size: 13.5px;
@@ -87,6 +90,9 @@ body {
     color: #121212;
 }
 
+
+
+/* ********INPUT BOX******** */
 .ipBox{
     margin: 1rem;
     padding: 1rem;
@@ -99,20 +105,7 @@ body {
     /* height: 100vh;   */
     
 }
-
-.opBox{
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img{
-    width: 25vh;
-    height: 25vh;
-}
-
-/* BOX IS INPUT AREA */
+/* box is input area */
 .box{
     border: none;
     width: 5rem;
@@ -122,21 +115,13 @@ body {
     margin: 0.5em;
     scale: 1.4;
 }
-/* FOR REMOVING UP-DOWN ARROW FROM INPUT */
+/* for removing up-down arrow for input area */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-        
 
-.submit{
-    width: 5rem;
-    border: none;
-    border-radius: 0.25rem;
-    padding: 0.25rem;
-    cursor: pointer;
-}
 
 .navbtns {
     text-decoration: none;
@@ -149,6 +134,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+/* PREV AND NEXT BUTTON */
 .previous {
     background-color: #F4F1EC;
     border: 1px solid #DEDAD3;
@@ -158,10 +144,8 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #F4F1EC;
     color: black;
     border: 2px solid #121212;
-    letter-spacing: 5px;
-    
+    letter-spacing: 5px;    
 }
-
 .navbtn{
     display: flex;
     justify-content: center;
@@ -169,6 +153,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+/* ELCTRICITY */
 .aa{
     display: flex;
     flex-direction: column;
@@ -182,7 +167,7 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 0.5rem;
 }
 
-
+/* HOUSE FUEL */
 .houseFuel {
     display: none;   
     margin-top: 22px;
@@ -211,6 +196,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+/* FAST TRAVEL */
 .fasttravel{
     display: none;
     margin-top: 22px;
@@ -245,9 +231,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
-
+/* SLOW TRAVEL */
 .slowtravel {
     display: none;
+    margin-top: 22px;
 }
 .dd{
     display: flex;
@@ -272,7 +259,7 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 0.5rem;
 }
 
-
+/* TRAVEL FUEL */
 .travelFuel {
     display: none;
     margin-top: 22px;
@@ -306,7 +293,7 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 0.5rem;
 }
 
-
+/* MEAL */
 .meal {
     display: none;
     margin-top: 22px;
@@ -323,6 +310,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .ffcontent{
     display: flex;
     gap: 5rem;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
 }
 .ffvegan{
@@ -338,11 +327,47 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 0.5rem;
 }
 
-.submit {
-    display: none;
+/* OUTPUT BOX */
+.opBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slowtravel {
-    margin-top: 22px;
+
+@media only screen and (max-width: 600px) {
+    .respcontent {
+      flex-direction: column;
+    }
+    .homePage{
+        background-image: url('https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/t/n/tnc_90495476_Full.jpg?crop=0%2C0%2C4000%2C2200&wid=4000&hei=2200&scl=1.0');
+        width: 95vw;   
+    }
+    .subhomePage{
+        padding-right: 3rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .hn2{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .preheading {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: -40px;
+        text-transform: uppercase;
+    }
+    .heading {
+        font-family: 'headingfont';
+        font-size: 40px;
+    }
+    .subheading {
+        margin-top: -20px;
+        font-size: 10.5px;
+        font-style: italic;
+        color: #121212;
+    }
 }
 

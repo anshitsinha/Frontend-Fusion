@@ -9,57 +9,54 @@
 
   <body>
     <div class="container">
-        <!-- HOMEPage -->
-        <div class="x">
+      <!-- HOMEPage -->
+      <div class="x">
         <div class="homePage" id="homepage">
-
-         <div class="homepg">
-           <div class="mainhomePage">
-                What is Your <br>Carbon Footprint?
-           </div>
-           <div class="subhomePage">
-            Evaluate Your Environmental Impact:  Our Carbon Calculator simplifies the assessment of your carbon footprint, concentrating on emissions from fuel, electricity, and personal travel over a specified period. By focusing on these key areas, the calculator empowers users to make informed decisions, fostering conscious consumption for a sustainable future.
-           </div>
-         </div>
-         
-         <div class="btnhomePage">
+          <div class="homepg">
+            <div class="mainhomePage">What is Your<br/>Carbon Footprint?</div>
+            <div class="subhomePage">
+              Evaluate Your Environmental Impact: Our Carbon Calculator
+              simplifies the assessment of your carbon footprint, concentrating
+              on emissions from fuel, electricity, and personal travel over a
+              specified period. By focusing on these key areas, the calculator
+              empowers users to make informed decisions, fostering conscious
+              consumption for a sustainable future.
+            </div>
+          </div>
+          <div class="btnhomePage">
             <a href="#start" class="navbtns next n0">START HERE &raquo;</a>
-         </div>
-
+          </div>
         </div>
+      </div>
+
+      <!-- HOMENAV -->
+      <div class="homeNav">
+        <div class="hn1">
+          <a href="#" onclick="location.reload();">Your Carbon Footprint</a>
         </div>
-
-       <!-- HOMENAV -->
-        <div class="homeNav">
-            <div class="hn1">
-              <a href="#" onclick="location.reload();">Your Carbon Footprint</a>
-            </div>
-
-            <div class="hn2">
-               <div class="hn21">Blogs</div>
-               <div class="hn22">Resources</div>
-               <div class="hn23">Github</div>
-            </div>
+        <div class="hn2">
+          <div class="hn21" style="cursor: pointer;">Blogs</div>
+          <div class="hn22" style="cursor: pointer;">Resources</div>
+          <div class="hn23" style="cursor: pointer;">Github</div>
         </div>
+      </div>
 
-        <!-- INPUT BOX -->
+      <!-- INPUT BOX -->
       <form action="" class="ipBox" onsubmit="handleFormSubmit(event)">
         <div class="electricity">
-          
           <div class="aa">
-            <div class="preheading">
-              Carbon emissions from 
-            </div>
-            <div class="heading">
-              Electricity Use
-            </div>
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Electricity Use</div>
             <div class="subheading">
-              Please share total electricity consumption by your household for the year.
+              Please share total electricity consumption by your household for
+              the year.
             </div>
             <div class="aacontent">
               <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" />
-              <label for="elect">As a household, how many units of <br>
-                electricity (kWh) do you consume in a year?</label>
+              <label for="elect"
+                >As a household, how many units of <br/>
+                electricity (kWh) do you consume in a year?</label
+              >
               <input type="number" id="elect" min="0" value="0" class="box" />
             </div>
             <div class="navbtn">
@@ -71,24 +68,24 @@
 
         <div class="houseFuel">
           <div class="bb">
-            <div class="preheading">
-              Carbon emissions from 
-            </div>
-            <div class="heading">
-              Fuel use at home
-            </div>
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Fuel use at home</div>
             <div class="subheading">
-              Please share total electricity consumption by your household for the year.
+              Please share total electricity consumption by your household for
+              the year.
             </div>
-            <div class="bbcontent">
+            <div class="bbcontent respcontent">
               <div class="bblpg">
                 <img src="./Assets/lpg.png " alt="" class="img" />
-                <label for="lpg">Gas Cylinder<br>(in kg)</label>
+                <label for="lpg">Gas Cylinder<br />(in kg)</label>
                 <input type="number" id="lpg" min="0" value="0" class="box" />
               </div>
               <div class="bbcoal">
                 <img src="./Assets/coal.png" alt="" class="img" />
-                <label for="coal">Coal Consumption <br> (in kg)</label>
+                <label for="coal"
+                  >Coal Consumption <br />
+                  (in kg)</label
+                >
                 <input type="number" id="coal" min="0" value="0" class="box" />
               </div>
             </div>
@@ -101,29 +98,35 @@
 
         <div class="fasttravel">
           <div class="cc">
-            <div class="preheading">
-              Carbon emissions from 
-            </div>
-            <div class="heading">
-              Travel
-            </div>
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Travel</div>
             <div class="subheading">
-              Please provide approximate kms travelled by you in a year using the following modes of public transport.
+              Please provide approximate kms travelled by you in a year using
+              the following modes of public transport.
             </div>
-            <div class="cccontent">
+            <div class="cccontent respcontent">
               <div class="ccair">
                 <img src="./Assets/aeroplane.png" alt="" class="img" />
-                <label for="air">Air Travel <br> (in km)</label>
+                <label for="air"
+                  >Air Travel <br />
+                  (in km)</label
+                >
                 <input type="number" id="air" min="0" value="0" class="box" />
               </div>
               <div class="ccrail">
                 <img src="./Assets/train.png" alt="" class="img" />
-                <label for="rail">Rail Travel <br> (in km)</label>
+                <label for="rail"
+                  >Rail Travel <br />
+                  (in km)</label
+                >
                 <input type="number" id="rail" min="0" value="0" class="box" />
               </div>
               <div class="ccmetro">
                 <img src="./Assets/metro.png" alt="" class="img" />
-                <label for="metro">Metro Travel <br> (in km)</label>
+                <label for="metro"
+                  >Metro Travel <br />
+                  (in km)</label
+                >
                 <input type="number" id="metro" min="0" value="0" class="box" />
               </div>
             </div>
@@ -136,24 +139,27 @@
 
         <div class="slowtravel">
           <div class="dd">
-            <div class="preheading">
-              Carbon emissions from 
-            </div>
-            <div class="heading">
-              Travel
-            </div>
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Travel</div>
             <div class="subheading">
-              Please provide approximate kms travelled by you in a year using the following modes of public transport.
+              Please provide approximate kms travelled by you in a year using
+              the following modes of public transport.
             </div>
-            <div class="ddcontent">
+            <div class="ddcontent respcontent">
               <div class="ddbus">
                 <img src="./Assets/bus.png" alt="" class="img" />
-                <label for="bus">Bus Travel <br> (in km)</label>
+                <label for="bus"
+                  >Bus Travel <br />
+                  (in km)</label
+                >
                 <input type="number" id="bus" min="0" value="0" class="box" />
               </div>
               <div class="ddcar">
                 <img src="./Assets/car.png" alt="" class="img" />
-                <label for="car">Car Travel <br> (in km)</label>
+                <label for="car"
+                  >Car Travel <br />
+                  (in km)</label
+                >
                 <input type="number" id="car" min="0" value="0" class="box" />
               </div>
             </div>
@@ -166,19 +172,18 @@
 
         <div class="travelFuel">
           <div class="ee">
-            <div class="preheading">
-              Carbon emissions from 
-            </div>
-            <div class="heading">
-              Travel
-            </div>
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Travel</div>
             <div class="subheading">
               Please provide approximate liters of fuel used by you in a year.
             </div>
-            <div class="eecontent">
+            <div class="eecontent respcontent">
               <div class="eepetrol">
                 <img src="./Assets/red-pump.png" alt="" class="img" />
-                <label for="petrol">Petrol Consumption <br> (in litre)</label>
+                <label for="petrol"
+                  >Petrol Consumption <br />
+                  (in litre)</label
+                >
                 <input
                   type="number"
                   id="petrol"
@@ -189,7 +194,10 @@
               </div>
               <div class="eediesel">
                 <img src="./Assets/orange-pump.png" alt="" class="img" />
-                <label for="diesel">Diesel Consumption <br> (in litre)</label>
+                <label for="diesel"
+                  >Diesel Consumption <br />
+                  (in litre)</label
+                >
                 <input
                   type="number"
                   id="diesel"
@@ -200,7 +208,7 @@
               </div>
               <div class="eecng">
                 <img src="./Assets/yellow-pump.png" alt="" class="img" />
-                <label for="cng">CNG Consumption<br>(in litre)</label>
+                <label for="cng">CNG Consumption<br />(in litre)</label>
                 <input type="number" id="cng" min="0" value="0" class="box" />
               </div>
             </div>
@@ -213,52 +221,66 @@
 
         <div class="meal">
           <div class="ff">
-            <div class="preheading">
-              Carbon emissions from 
-            </div>
-            <div class="heading">
-              Meals
-            </div>
+            <div class="preheading">Carbon emissions from</div>
+            <div class="heading">Meals</div>
             <div class="subheading">
               Please select your meal preference for the year.
             </div>
-            <div class="ffcontent">
+            <div class="ffcontent respcontent">
               <div class="ffimg">
-                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" /><br>
-              <div class="ffvegan">
-                <label for="vegan">Vegan</label>
-                <input type="radio" id="vegan" value="vegan" name="food" />
+                <img
+                  src="./img/Gulab-Jamun-Thumbnail.jpg"
+                  alt=""
+                  class="img"
+                /><br />
+                <div class="ffvegan">
+                  <label for="vegan">Vegan</label>
+                  <input type="radio" id="vegan" value="vegan" name="food" />
+                </div>
               </div>
-              </div> 
               <div class="ffimg">
-                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" /><br>
-              <div class="ffveg">
-                <label for="veg">Vegetarain</label>
-                <input type="radio" id="veg" value="veg" name="food" checked />
+                <img
+                  src="./img/Gulab-Jamun-Thumbnail.jpg"
+                  alt=""
+                  class="img"
+                /><br />
+                <div class="ffveg">
+                  <label for="veg">Vegetarain</label>
+                  <input
+                    type="radio"
+                    id="veg"
+                    value="veg"
+                    name="food"
+                    checked
+                  />
+                </div>
               </div>
-            </div>
-            <div class="ffimg">
-                <img src="./img/Gulab-Jamun-Thumbnail.jpg" alt="" class="img" /><br>
-              <div class="ffmeat">
-                <label for="meat">Meat Eater</label>
-                <input type="radio" id="meat" value="meat" name="food" />
+              <div class="ffimg">
+                <img
+                  src="./img/Gulab-Jamun-Thumbnail.jpg"
+                  alt=""
+                  class="img"
+                /><br />
+                <div class="ffmeat">
+                  <label for="meat">Meat Eater</label>
+                  <input type="radio" id="meat" value="meat" name="food" />
+                </div>
               </div>
-            </div>
             </div>
             <div class="navbtn">
               <a href="#" class="navbtns previous p5">&laquo; </a>
-              <a href="#" class="navbtns next n5" onclick="calculator()">Submit &raquo;</a>
+              <a href="#" class="navbtns next n5" onclick="calculator()"
+                >Submit &raquo;</a
+              >
             </div>
           </div>
         </div>
-
-        
       </form>
 
-        <!-- OUTPUT BOX -->
+      <!-- OUTPUT BOX -->
       <div class="opBox"></div>
     </div>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
