@@ -305,6 +305,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .ffcontent{
     display: flex;
     gap: 5rem;
+    margin-bottom: 40px;
 }
 .ffvegan{
     display: flex;
