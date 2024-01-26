@@ -177,6 +177,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .houseFuel {
     display: none;   
+    margin-top: 22px;
 }
 .bb{
     display: flex;
@@ -204,6 +205,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .fasttravel{
     display: none;
+    margin-top: 22px;
 }
 .cc{
     display: flex;
@@ -265,6 +267,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .travelFuel {
     display: none;
+    margin-top: 22px;
 }
 .ee{
     display: flex;
@@ -298,6 +301,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .meal {
     display: none;
+    margin-top: 22px;
 }
 .ff{
     display: flex;
@@ -330,4 +334,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: none;
 }
 
+.slowtravel {
+    margin-top: 22px;
+}
 
