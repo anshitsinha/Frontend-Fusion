@@ -48,7 +48,7 @@ body {
 .homeNav{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    /* margin: 1rem; */
     padding: 1rem;
     border-bottom: 1px solid black;
 }
@@ -84,12 +84,12 @@ body {
     align-items: center;
     gap: 2rem;
     /* background-color: cornflowerblue; */
-    height: 100vh;  
+    /* height: 100vh;   */
     
 }
 
 .opBox{
-    height: 100vh;;
+    /* height: 100vh;; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +159,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin: 24px;
 }
 .aacontent{
     display: flex;
