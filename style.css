@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 a {
     color: inherit;
 }
@@ -43,7 +47,11 @@ body {
 .subhomePage{
     font-family: 'Poppins', Courier, monospace;
     width: 88%;
+    font-weight: 450;
+    margin-top: 37px;
+    margin-left: 10px;
 }
+
 .btnhomePage{
     text-align: center;
 }
