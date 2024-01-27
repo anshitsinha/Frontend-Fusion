@@ -1,7 +1,6 @@
 function handleFormSubmit(event) {
     event.preventDefault();
 }
-
 let electIP, lpgIP, caolIP, airIP, railIP, metroIP, busIP, carIP, petrolIP, dieselIP, cngIP, mealIP, totalEmission;
 
 function calculator(){
@@ -36,7 +35,6 @@ function calculator(){
     target.innerHTML="Your approximate Carbon Footprint : "+totalEmission
 }
 
-
 let p1 = document.querySelector(".p1");
 let n1 = document.querySelector(".n1");
 let p2 = document.querySelector(".p2");
@@ -49,7 +47,6 @@ let p4 = document.querySelector(".p4");
 let n4 = document.querySelector(".n4");
 let p5 = document.querySelector(".p5");
 let n5 = document.querySelector(".n5");
-
 
 
 let x=document.querySelector(".x");
