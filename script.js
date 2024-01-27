@@ -32,7 +32,7 @@ function calculator(){
         totalEmission=(electIP*0.00071)+(lpgIP*0.00207)+(caolIP*0.0025)+(airIP*0.000121)+(railIP*0.0078/1000)+(metroIP*0.0139/1000)+(busIP*0.054/1000)+(carIP*0.1431/1000)+(3.017)+(petrolIP*2.34/1000)+(dieselIP*2.71/1000)+(cngIP*2.07/1000);
     }
 
-    let target=document.getElementsByClassName("opBox")[0];
+    let target=document.getElementsByClassName("opBox1")[0];
     target.innerHTML="Your approximate Carbon Footprint : "+totalEmission
 }
 
@@ -88,6 +88,7 @@ n4.addEventListener('click', function(event) {
 n5.addEventListener('click', function(event) {
     meal.style.display = "none";
     ipBox.style.display = "none";
+    opBox.style.display="block";
 });
 
 
@@ -113,7 +114,5 @@ p5.addEventListener('click', function(event) {
     meal.style.display = "none";
     travelFuel.style.display = "block";
 });
-
-
 
 
