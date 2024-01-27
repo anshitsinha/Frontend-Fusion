@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon Footprint</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
   </head>
 
   <body>
     <div class="container">
-      <div class="banner">
-        <div class="clouds">
-            <img src="./Assets/cloud1.png" alt="cloud1" style="--i:1">
-            <img src="./Assets/cloud2.png" alt="cloud2" style="--i:2">
-            <img src="./Assets/cloud3.png" alt="cloud3" style="--i:3">
-            <img src="./Assets/cloud4.png" alt="cloud4" style="--i:4">
-            <img src="./Assets/cloud5.png" alt="cloud5" style="--i:5">
-        </div>
-    </div>
       <!-- HOMEPage -->
       <div class="x">
         <div class="homePage" id="homepage">
@@ -45,7 +42,7 @@
         </div>
         <div class="hn2">
           <div class="hn21" style="cursor: pointer;">Blogs</div>
-          <div class="hn22" style="cursor: pointer;"><a href="https://www.unep.org">Resources</a></div>
+          <div class="hn22" style="cursor: pointer;">Resources</div>
           <div class="hn23" style="cursor: pointer;">Github</div>
         </div>
       </div>
@@ -111,7 +108,7 @@
             <div class="heading">Travel</div>
             <div class="subheading">
               Please provide approximate kms travelled by you in a year using
-              the following modes of transport.
+              the following modes of public transport.
             </div>
             <div class="cccontent respcontent">
               <div class="ccair">
@@ -152,7 +149,7 @@
             <div class="heading">Travel</div>
             <div class="subheading">
               Please provide approximate kms travelled by you in a year using
-              the following modes of transport.
+              the following modes of public transport.
             </div>
             <div class="ddcontent respcontent">
               <div class="ddbus">
@@ -278,9 +275,7 @@
             </div>
             <div class="navbtn">
               <a href="#" class="navbtns previous p5">&laquo; </a>
-              <a href="#" class="navbtns next n5" onclick="calculator()"
-                >Submit &raquo;</a
-              >
+              <a href="#" class="navbtns next n5" onclick="calculator()">Submit &raquo;</a>
             </div>
           </div>
         </div>
@@ -289,20 +284,39 @@
       <!-- OUTPUT BOX -->
       <div class="opBox">
        <div class="opBoxContent">
-        <div class="opBox1"></div>
-        <div class="final1">
-          <div class="final11">a</div>
-          <div class="final12">b</div>
-        </div>
-        <div class="final2">
+         <div class="opBox1"></div>
+         <!-- <div class="final1"> 
+           <div class="final11">
+           a
+           </div>         
+           <div class="final12">
+          b
+           </div>        
+         </div>  
+         <div class="final2">
           <div class="final21">y</div>
           <div class="final22">z</div>
+         </div> -->
+
+         <h3 class="text-primary text-center">
+          footprint js charts
+      </h3>
+      <div class="row">
+          <div class="col-sm-6 text-center">
+              <label class="label label-success">Area Chart</label>
+              <div id="area-chart" ></div>
+          </div>
+     
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+              <label class="label label-success">Pie Chart</label>
+              <div id="pie-chart" ></div>
+          </div>
+      </div>
+
         </div>
-       </div>
       </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
   </body>
 </html>
 
