@@ -350,7 +350,38 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: space-around;
 }
-
+.final22{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 20vw;
+    justify-content: space-evenly;
+}
+.m{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height:5vw;
+    background-color: aquamarine;
+}
+.n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: 5vw;
+    background-color: aquamarine;
+}
+.o{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: 5vw;
+    background-color: aquamarine;
+}
 
 @media only screen and (max-width: 600px) {
     .respcontent {
@@ -389,6 +420,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+
 .banner {
     z-index: -1;
     position: fixed;
@@ -397,8 +429,7 @@ input[type="number"]::-webkit-outer-spin-button {
     background: url(assets/bg.jpg);
     background-size: cover;
     background-position: bottom;
-  }
-  
+  } 
   .banner .clouds {
     position: fixed;
     top: 0;
@@ -407,8 +438,7 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     overflow: hidden;
     opacity: 70%;
-  }
-  
+  } 
   .banner .clouds img {
     position: absolute;
     bottom: 0;
