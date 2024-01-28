@@ -20,7 +20,6 @@ a {
     height: 25vh;
 }
 
-
 body {
     font-family: 'Poppins', Courier, monospace;
     background-image: radial-gradient(circle at 1px 1px, #DEDAD3 1px, transparent 0);
@@ -76,6 +75,7 @@ body {
 /* ************************** */
 .preheading {
     font-weight: 600;
+    margin-top: -10px;
     margin-bottom: -40px;
     text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ body {
     font-size: 80px;
 }
 .subheading {
-    margin-top: -20px;
+    margin-top: -30px;
     font-size: 13.5px;
     font-style: italic;
     color: #121212;
@@ -123,6 +123,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+/* ***** Next and Previous Buttons ******/
 .navbtns {
     text-decoration: none;
     display: inline-block;
@@ -302,6 +303,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin: 0.8rem;
 }
 .ffimg{
     display: flex;
@@ -336,22 +338,20 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
-.opBox1{
+.op{
+    margin: -2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 3vw;
+    font-weight: 350;  
 }
-.final1{
- display: flex;
- justify-content: space-around;
-}
-.final2{
-    display: flex;
-    justify-content: space-around;
-}
+
+/* ***** Final Blogs ***** */
 .final22{
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -364,7 +364,7 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     padding: 0.5rem;
     height:5vw;
-    background-color: aquamarine;
+    background-color: rgb(192, 204, 200);
 }
 .n{
     display: flex;
@@ -372,7 +372,7 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     padding: 0.5rem;
     height: 5vw;
-    background-color: aquamarine;
+    background-color: rgb(192, 204, 200);
 }
 .o{
     display: flex;
@@ -380,7 +380,7 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
     padding: 0.5rem;
     height: 5vw;
-    background-color: aquamarine;
+    background-color: rgb(192, 204, 200);
 }
 
 @media only screen and (max-width: 600px) {

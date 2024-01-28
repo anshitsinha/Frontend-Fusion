@@ -20,9 +20,9 @@
       </div>
       <!-- HOMEPage -->
       <div class="x">
-        <div class="homePage" id="homepage">
+        <div class="homePage" id="homepg">
           <div class="homepg">
-            <div class="mainhomePage">What is Your<br />Carbon Footprint?</div>
+            <div class="mainhomePage">What is Your<br/>Carbon Footprint?</div>
             <div class="subhomePage">
               Evaluate Your Environmental Impact: Our Carbon Calculator
               simplifies the assessment of your carbon footprint, concentrating
@@ -39,21 +39,23 @@
       </div>
 
       <!-- HOMENAV -->
-      <div class="homeNav">
+      <div class="homeNav" id="start">
         <div class="hn1">
-          <a href="#" onclick="location.reload();">Your Carbon Footprint</a>
+          <a href="#homepg" style="text-decoration: none;" onclick="tryi()">Your Carbon Footprint</a>
         </div>
         <div class="hn2">
           <div class="hn21" style="cursor: pointer">Blogs</div>
           <div class="hn22" style="cursor: pointer">
-            <a href="https://www.unep.org" target="_blank">Resources</a>
+            <a href="https://www.unep.org" target="_blank" style="text-decoration: none;">Resources</a>
           </div>
-          <div class="hn23" style="cursor: pointer">Github</div>
+          <div class="hn23" style="cursor: pointer">
+            <a href="https://github.com/aditya-jnu/Frontend-Fusion" target="_blank" style="text-decoration: none;">Github</a>
+          </div>
         </div>
       </div>
 
       <!-- INPUT BOX -->
-      <form action="" class="ipBox" onsubmit="handleFormSubmit(event)">
+      <form action="" class="ipBox">
         <div class="electricity">
           <div class="aa">
             <div class="preheading">Carbon emissions from</div>
@@ -278,63 +280,64 @@
 
       <!-- OUTPUT BOX -->
       <div class="opBox">
+
         <div class="opBoxContent">
-          <div class="opBox1"></div>
-          <div class="final1">
-            <div class="final11">a</div>
-            <div class="final12">b</div>
+          <div class="op" style="display: flex; flex-direction: column;">
+           <div class="opBox1" style="font-weight: 300;"></div>
+           <div class="opBox1" style="font-size: 3vw; font-weight: 700;"></div>
           </div>
-          <div class="final2">
-            <div class="final21">y</div>
-            <div class="final22">
-              <div class="m">
-                <div style="font-size: 2rem; font-weight: 100">01</div>
-                <div>...</div>
-                <a href="./blogs/blog1.html" target="_blank">
+          <div class="final22">
+            <div class="m">
+                <div style="font-size: 2rem; font-weight: 100; border-right: 1px solid black; padding-right:1.5rem;">01</div>
+                <div>Blog 1</div>
+                <a href="./blogs/blog1.html" target="_blank" style="text-decoration: none;">
                   <div
                     style="
                       border-left: 1px solid black;
                       padding: 0.25rem;
+                      padding-left: 0.75rem;
                       font-size: 2rem;
                     "
                   >
                     ->
                   </div>
                 </a>
-              </div>
-              <div class="n">
-                <div style="font-size: 2rem; font-weight: 100">02</div>
-                <div>...</div>
-                <a href="./blogs/blog2.html" target="_blank">
+            </div>
+            <div class="n">
+                <div style="font-size: 2rem; font-weight: 100; border-right: 1px solid black; padding-right:0.85rem;">02</div>
+                <div>Blog 2</div>
+                <a href="./blogs/blog2.html" target="_blank" style="text-decoration: none;">
                   <div
                     style="
                       border-left: 1px solid black;
                       padding: 0.25rem;
+                      padding-left: 0.75rem;
                       font-size: 2rem;
                     "
                   >
                     ->
                   </div>
                 </a>
-              </div>
-              <div class="o">
-                <div style="font-size: 2rem; font-weight: 100">03</div>
-                <div>...</div>
-                <a href="./blogs/blog3.html" target="_blank">
+            </div>
+            <div class="o">
+                <div style="font-size: 2rem; font-weight: 100; border-right: 1px solid black; padding-right:0.85rem;">03</div>
+                <div>Blog 3</div>
+                <a href="./blogs/blog3.html" target="_blank" style="text-decoration: none;">
                   <div
                     style="
                       border-left: 1px solid black;
                       padding: 0.25rem;
+                      padding-left: 0.75rem;
                       font-size: 2rem;
                     "
                   >
                     ->
                   </div>
                 </a>
-              </div>
             </div>
           </div>
         </div>
+
       </div>
       
     </div>
