@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon Footprint</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
     <div class="container">
       <div class="banner">
         <div class="clouds">
-            <img src="./Assets/cloud1.png" alt="cloud1" style="--i:1">
-            <img src="./Assets/cloud2.png" alt="cloud2" style="--i:2">
-            <img src="./Assets/cloud3.png" alt="cloud3" style="--i:3">
-            <img src="./Assets/cloud4.png" alt="cloud4" style="--i:4">
-            <img src="./Assets/cloud5.png" alt="cloud5" style="--i:5">
+          <img src="./Assets/cloud1.png" alt="cloud1" style="--i: 1" />
+          <img src="./Assets/cloud2.png" alt="cloud2" style="--i: 2" />
+          <img src="./Assets/cloud3.png" alt="cloud3" style="--i: 3" />
+          <img src="./Assets/cloud4.png" alt="cloud4" style="--i: 4" />
+          <img src="./Assets/cloud5.png" alt="cloud5" style="--i: 5" />
         </div>
-    </div>
+      </div>
       <!-- HOMEPage -->
       <div class="x">
-        <div class="homePage" id="homepage">
+        <div class="homePage" id="homepg">
           <div class="homepg">
             <div class="mainhomePage">What is Your<br/>Carbon Footprint?</div>
             <div class="subhomePage">
@@ -39,19 +40,23 @@
       </div>
 
       <!-- HOMENAV -->
-      <div class="homeNav">
+      <div class="homeNav" id="start">
         <div class="hn1">
-          <a href="#" onclick="location.reload();">Your Carbon Footprint</a>
+          <a href="#homepg" style="text-decoration: none;" onclick="tryi()">Your Carbon Footprint</a>
         </div>
         <div class="hn2">
-          <div class="hn21" style="cursor: pointer;">Blogs</div>
-          <div class="hn22" style="cursor: pointer;"><a href="https://www.unep.org">Resources</a></div>
-          <div class="hn23" style="cursor: pointer;">Github</div>
+          <div class="hn21" style="cursor: pointer">Blogs</div>
+          <div class="hn22" style="cursor: pointer">
+            <a href="https://www.unep.org" target="_blank" style="text-decoration: none;">Resources</a>
+          </div>
+          <div class="hn23" style="cursor: pointer">
+            <a href="https://github.com/aditya-jnu/Frontend-Fusion" target="_blank" style="text-decoration: none;">Github</a>
+          </div>
         </div>
       </div>
 
       <!-- INPUT BOX -->
-      <form action="" class="ipBox" onsubmit="handleFormSubmit(event)">
+      <form action="" class="ipBox">
         <div class="electricity">
           <div class="aa">
             <div class="preheading">Carbon emissions from</div>
@@ -63,7 +68,7 @@
             <div class="aacontent">
               <img src="./Assets/house1.png" alt="" class="img" />
               <label for="elect"
-                >As a household, how many units of <br/>
+                >As a household, how many units of <br />
                 electricity (kWh) do you consume in a year?</label
               >
               <input type="number" id="elect" min="0" value="0" class="box" />
@@ -182,7 +187,7 @@
         <div class="travelFuel">
           <div class="ee">
             <div class="preheading">Carbon emissions from</div>
-            <div class="heading">Travel</div>
+            <div class="heading">Travel Fuel</div>
             <div class="subheading">
               Please provide approximate liters of fuel used by you in a year.
             </div>
@@ -237,22 +242,14 @@
             </div>
             <div class="ffcontent respcontent">
               <div class="ffimg">
-                <img
-                  src="./Assets/vegan1 .png"
-                  alt=""
-                  class="img"
-                /><br />
+                <img src="./Assets/vegan1 .png" alt="" class="img" /><br />
                 <div class="ffvegan">
                   <label for="vegan">Vegan</label>
                   <input type="radio" id="vegan" value="vegan" name="food" />
                 </div>
               </div>
               <div class="ffimg">
-                <img
-                  src="./Assets/vegan2.png"
-                  alt=""
-                  class="img"
-                /><br />
+                <img src="./Assets/vegan2.png" alt="" class="img" /><br />
                 <div class="ffveg">
                   <label for="veg">Vegetarain</label>
                   <input
@@ -265,11 +262,7 @@
                 </div>
               </div>
               <div class="ffimg">
-                <img
-                  src="./Assets/meat vegan .png"
-                  alt=""
-                  class="img"
-                /><br />
+                <img src="./Assets/meat vegan .png" alt="" class="img" /><br />
                 <div class="ffmeat">
                   <label for="meat">Meat Eater</label>
                   <input type="radio" id="meat" value="meat" name="food" />
@@ -288,21 +281,95 @@
 
       <!-- OUTPUT BOX -->
       <div class="opBox">
-       <div class="opBoxContent">
-        <div class="opBox1"></div>
-        <div class="final1">
-          <div class="final11">a</div>
-          <div class="final12">b</div>
-        </div>
-        <div class="final2">
-          <div class="final21">y</div>
-          <div class="final22">z</div>
-        </div>
-       </div>
-      </div>
-    </div>
 
+        <div class="opBoxContent">
+          <div class="op">
+           <div class="opBox1" ></div>
+           <div class="opBox1" ></div>
+          </div>
+          <div class="op2">
+            <div class="graph1">
+            <canvas id="myChart1"></canvas>
+            </div>
+            <div class="graph2">
+          <canvas id="myChart2"></canvas>
+            </div>
+            <div class="graph3">
+        <canvas id="myChart3"></canvas>
+            </div>
+            <div class="graph4">
+              <div class="final22">
+                <div class="m">
+                    <div style="font-size: 2.75vw; font-weight: 100; border-right: 1px solid black; width:3vw;">01</div>
+                    <div style="font-size: 3vw; font-weight: 200;">Blog 1</div>
+                    <a href="./blogs/blog1.html" target="_blank" style="text-decoration: none;">
+                      <div
+                        style="
+                          border-left: 1px solid black;
+                          
+                          font-size: 3.5vw;
+                          display: flex;
+                          justify-content: center;
+                          font-weight: 700;
+                        "
+                      >
+                        ->
+                      </div>
+                    </a>
+                </div>
+                <div class="n">
+                    <div style="font-size: 2.75vw; font-weight: 100; border-right: 1px solid black; width:3vw;">02</div>
+                    <div style="font-size: 3vw;font-weight: 200;">Blog 2</div>
+                    <a href="./blogs/blog2.html" target="_blank" style="text-decoration: none;">
+                      <div
+                        style="
+                          border-left: 1px solid black;
+                          
+                          font-size: 3.5vw;
+                          display: flex;
+                          justify-content: center;
+                          font-weight: 700;
+                        "
+                      >
+                        ->
+                      </div>
+                    </a>
+                </div>
+                <div class="o">
+                    <div style="font-size: 2.75vw; font-weight: 100; border-right: 1px solid black; width:3vw;">03</div>
+                    <div style="font-size: 3vw; font-weight: 200;">Blog 3</div>
+                    <a href="./blogs/blog3.html" target="_blank" style="text-decoration: none;">
+                      <div
+                        style="
+                          border-left: 1px solid black;
+                          
+                          font-size: 3.5vw;
+                          display: flex;
+                          justify-content: center;
+                          font-weight: 700;
+                        "
+                      >
+                        ->
+                      </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+    
+            </div>
+          </div>
+          
+        </div>
+
+
+      </div>
+      
+    </div>
+    
+
+  <script>
+      
+  </script>
     <script src="script.js"></script>
   </body>
 </html>
-

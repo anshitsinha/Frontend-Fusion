@@ -20,7 +20,6 @@ a {
     height: 25vh;
 }
 
-
 body {
     font-family: 'Poppins', Courier, monospace;
     background-image: radial-gradient(circle at 1px 1px, #DEDAD3 1px, transparent 0);
@@ -76,6 +75,7 @@ body {
 /* ************************** */
 .preheading {
     font-weight: 600;
+    margin-top: -10px;
     margin-bottom: -40px;
     text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ body {
     font-size: 80px;
 }
 .subheading {
-    margin-top: -20px;
+    margin-top: -30px;
     font-size: 13.5px;
     font-style: italic;
     color: #121212;
@@ -123,6 +123,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+/* ***** Next and Previous Buttons ******/
 .navbtns {
     text-decoration: none;
     display: inline-block;
@@ -302,6 +303,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin: 0.8rem;
 }
 .ffimg{
     display: flex;
@@ -336,22 +338,50 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
-.opBox1{
+.op{
+    margin: -2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.final1{
- display: flex;
- justify-content: space-around;
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 3vw;
+    font-weight: 350;  
 }
 
-.final2{
+/* ***** Final Blogs ***** */
+.final22{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+   
+    
+    justify-content: center;
 }
-
+.m{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height:5vw;
+    background-color: rgb(192, 204, 200);
+}
+.n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: 5vw;
+    background-color: rgb(192, 204, 200);
+}
+.o{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: 5vw;
+    background-color: rgb(192, 204, 200);
+}
 
 @media only screen and (max-width: 600px) {
     .respcontent {
@@ -390,6 +420,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 
+
 .banner {
     z-index: -1;
     position: fixed;
@@ -398,8 +429,7 @@ input[type="number"]::-webkit-outer-spin-button {
     background: url(assets/bg.jpg);
     background-size: cover;
     background-position: bottom;
-  }
-  
+  } 
   .banner .clouds {
     position: fixed;
     top: 0;
@@ -408,8 +438,7 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     overflow: hidden;
     opacity: 70%;
-  }
-  
+  } 
   .banner .clouds img {
     position: absolute;
     bottom: 0;
@@ -438,3 +467,58 @@ input[type="number"]::-webkit-outer-spin-button {
               transform: translateX(100%);
     }
   }  
+
+  .op2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            width: 90%;
+            height: 80vh;
+    
+  }
+
+  
+
+  .graph1 {
+    /* background-color: #C6DB88;  */
+   grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 4;
+   grid-column-end: 6;
+   
+  }
+
+  .graph2 {
+    /* background-color: #8D5EDF;  */
+    grid-row-start: 1;
+    grid-column-start: 6;
+ 
+    grid-row-end: 4;
+    grid-column-end: 9;
+  }
+
+  .graph3 {
+    /* background-color: #65A8B5;  */
+   grid-row-start: 4;
+   grid-column-start: 1;
+
+   grid-row-end: 6;
+   grid-column-end: 7;
+   
+  }
+
+  .graph4 {
+    background-color: #FB79BD; 
+    grid-row-start: 4;
+    grid-column-start: 7;
+ 
+    grid-row-end: 6;
+    grid-column-end: 9;
+  }
+
+  #myChart3 {
+    width: 100%;
+  }
+
+  
