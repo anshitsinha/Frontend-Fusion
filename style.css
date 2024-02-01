@@ -345,34 +345,10 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins', Courier, monospace;
-    font-size: 3vw;
-    font-weight: 350;  
 }
-
-/* ***** Final Blogs ***** */
-.final22{
-    display: flex;
-    flex-direction: column;
-   
-    
-    justify-content: center;
-}
-.m{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    height:5vw;
-    background-color: rgb(192, 204, 200);
-}
-.n{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem;
-    height: 5vw;
-    background-color: rgb(192, 204, 200);
+.final1{
+ display: flex;
+ justify-content: space-around;
 }
 .o{
     display: flex;
