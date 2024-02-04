@@ -32,7 +32,7 @@ function calculator() {
     totalEmi = totalEmission.toFixed(2);
     let target1 = document.getElementsByClassName("opBox1")[0];
     let target2 = document.getElementsByClassName("opBox1")[1];
-    target1.innerHTML = "Your approximate Carbon Footprint";
+    target1.innerHTML = "Your approximate Carbon Footprint is";
     target2.innerHTML = +totalEmi + " tonnes";
 
     const electdt = electIP * 0.00071 * 1000000;
@@ -120,11 +120,13 @@ function calculator() {
         data: data1,
         options: {
             indexAxis: 'y',
+            
             // Elements options apply to all of the options unless overridden in a dataset
             // In this case, we are setting the border of each horizontal bar to be 2px wide
             elements: {
                 bar: {
                     borderWidth: 0,
+                    barThickness: 10,
                 }
             },
             responsive: true,
